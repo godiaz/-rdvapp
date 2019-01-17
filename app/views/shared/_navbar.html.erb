@@ -1,0 +1,50 @@
+<div class="navbar-hoxton">
+
+  <div class="navbar-hoxton_first-section">
+
+    <a href="/">
+      <%= image_tag 'logo.png' %>
+      <!-- <img src="images/logo.png" alt="logo"> -->
+    </a>
+
+    <div class="navbar-hoxton_first-section_content">
+      <div class="navbar-hoxton_first-section_content_social-media">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+
+      <div class="navbar-hoxton_first-section_content_events hidden-md hidden-sm hidden-xs">
+          <p> CARTAGENA, COLOMBIA NOVEMBER 2019</p>
+          <p> PORTO, PORTUGAL NOVEMBER 2019</p>
+      </div>
+    </div>
+
+    <!-- Dropdown appearing on mobile only -->
+    <div class="navbar-hoxton_first-section_hamburger hidden-lg">
+      <div class="dropdown">
+        <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-hoxton-dropdown-menu">
+          <li><a href="/index.html">WELCOME</a></li>
+          <li><a href="/unclassifiable.html">UNCLASSIFIABLE</a></li>
+          <li><a href="/wouldyou.html">WOULD YOU?</a></li>
+          <li><a href="/contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar-hoxton_pink-label">
+
+  </div>
+
+  <div class="navbar-hoxton_second-section hidden-sm hidden-xs hidden-md">
+    <%= link_to 'WELCOME', root_path, class: "hidden-xs hidden-sm" %>
+    <!-- <a href="/home.html.erb" class="hidden-xs hidden-sm">WELCOME</a> -->
+    <a href="/unclassifiable.html" class="hidden-xs hidden-sm">UNCLASSIFIABLE</a>
+    <a href="/wouldyou.html" class="hidden-xs hidden-sm">WOULD YOU?</a>
+    <a href="/contact.html" class="hidden-xs hidden-sm">CONTACT</a>
+  </div>
+
+</div>
+
