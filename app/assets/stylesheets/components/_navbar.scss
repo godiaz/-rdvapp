@@ -126,3 +126,15 @@
   border-top: 1px solid #E6E6E6;
 }
 
+@media only screen and (max-width: 570px) {
+  .navbar-hoxton_first-section img {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .navbar-hoxton_first-section_content_social-media i {
+      padding: 8px;
+      margin: 2px;
+  }
+}
+
