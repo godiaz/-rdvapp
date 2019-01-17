@@ -1,2 +1,116 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="home-page">
+  <section class="home-page_section-one">
+    <h4>#UNCLASSIFIABLE</h4>
+    <p>#YESIDATE #WOULDYOU?</p>
+    <span>Learn More</span>
+  </section>
+  <section class="home-page_section-two">
+    <h1>
+      Rendez-Vous is an International Luxury Hotel Forum that creates unique partnerships between the best hotels in the world and the most important MICE buyers.
+    </h1>
+  </section>
+  <section class="home-page_section-three">
+    <div class="home-page_section-three_header">
+      <h4>Would you?</h4>
+    </div>
+    <div class="home-page_section-three_card-box">
+      <div class="home-page_section-three_card-box_first-card">
+        <div class="home-page_section-three_card-box_first-card_image"></div>
+        <div class="home-page_section-three_card-box_first-card_text">
+          <h4>Cartagena, COLOMBIA</h4>
+          <p>DATES:<br>NOVEMBER 26 TO NOVEMBER 29, 2019</p>
+          <p>HOTEL:<br>HOTEL LEGEND SOFITEL SANTA CLARA</p>
+          <span class="home-page_section-three_card-box_first-card_text_button">Would you?</span>
+        </div>
+      </div>
+      <div class="home-page_section-three_card-box_second-card">
+        <div class="home-page_section-three_card-box_second-card_text">
+          <h4>Porto, PORTUGAL</h4>
+          <p>DATES:<br>JUNE 2 TO JUNE 9, 2019</p>
+          <p>HOTEL:<br>HOTEL LEGEND SOFITEL SANTA CLARA</p>
+          <span class="home-page_section-three_card-box_second-card_text_button">Would you?</span>
+        </div>
+        <div class="home-page_section-three_card-box_second-card_image"></div>
+      </div>
+    </div>
+  </section>
+  <section class="home-page_section-four">
+    <div class="home-page_section-four_header">
+      <h4>Past Editions</h4>
+    </div>
+    <div class="home-page_section-four_card-box">
+      <div class="home-page_section-four_card-box_first-card">
+        <div class="home-page_section-four_card-box_first-card_image"></div>
+        <div class="home-page_section-four_card-box_first-card_text">
+          <h4>Vienna, AUSTRIA</h4>
+          <p>Park Hyatt, February 2018</p>
+          <span class="home-page_section-four_card-box_first-card_button" id="myBtn">Learn More</span>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>This is modal number 1</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="home-page_section-four_card-box_second-card">
+        <div class="home-page_section-four_card-box_second-card_image"></div>
+        <div class="home-page_section-four_card-box_second-card_text">
+          <h4>Saint-Vincent, Italia</h4>
+          <p>Grand Hotel Billia, June 2016</p>
+          <span class="home-page_section-four_card-box_second-card_button" id="myBtn">Learn More</span>
+          <!-- The Modal -->
+          <div id="myModal2" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>This is modal number 2</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="home-page_section-four_card-box_third-card">
+        <div class="home-page_section-four_card-box_third-card_image"></div>
+        <div class="home-page_section-four_card-box_third-card_text">
+          <h4>Paris, France</h4>
+          <p>Hotel du Colllectionneur, November 2015</p>
+          <span class="home-page_section-four_card-box_third-card_button">Learn More</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

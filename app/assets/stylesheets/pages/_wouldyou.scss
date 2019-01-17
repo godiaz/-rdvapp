@@ -1,0 +1,336 @@
+#about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background-image: linear-gradient(0deg, white 50%, #F4F4F4 50%);
+  img {
+
+    width: 150px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    color: rgba(0,0,0,0.7);
+    font-family: 'Open Sans', sans-serif;
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+  }
+  a {
+    color: rgba(0,0,0,0.25);
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+  }
+  .fa-heart {
+    color: #D23333;
+  }
+}
+
+
+.team {
+  height: 300px;
+  background-color: red;
+}
+.spacer {
+  height: 168px;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+.unclas-image {
+  width: 100vw;
+  margin-top: 168px;
+}
+
+.paragraph {
+  text-align: center;
+  border-top: 8px solid $primary-color;
+  padding-top: 30px;
+  margin-bottom: 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.headers {
+  text-align: center;
+  font-weight: bold;
+}
+
+.would-you {
+  text-align: right;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 8px solid $primary-color;
+  padding-right: 30px;
+}
+
+.tar {
+  padding-left: 30px;
+  text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+.banner-img {
+  padding-top: 168px;
+  width: 100%;
+  height: 50vw;
+  min-height: 500px;
+  background-size: cover;
+  display:flex;
+  position: relative;
+  z-index: -2;
+}
+
+.wouldyou {
+  background-image: url("would_you.png");
+  background-position: left;
+}
+
+.contact {
+  background-image: url("palms.png");
+  background-position: center;
+}
+
+.banner-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.bottom-left {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  text-align: right;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-logo {
+  height: 80px;
+  width:80px;
+}
+
+.left-logo {
+  height: 140px;
+  width: 140px;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.bl-header {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 20vw;
+  left: 27vw;
+  font-size: 46px !important;
+}
+
+.shaped {
+  float:left;
+  height: calc(35vw * 0.726);
+  width:35vw;
+  background-size:cover;
+}
+
+.main-button {
+  cursor: pointer;
+  background-color: #F45B69;
+  color: white;
+  width: 300px;
+  font-size: 28px;
+  padding: 10px 30px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 0 0.5px rgba(3, 42, 60, 0.2), 0 0 0 1px rgba(3, 42, 60, 0.1), 0 14px 28px rgba(3, 42, 60, 0.25), 0 10px 10px rgba(3, 42, 60, 0.22);
+  box-shadow: 0 0 0 0.5px rgba(3, 42, 60, 0.2), 0 0 0 1px rgba(3, 42, 60, 0.1), 0 14px 28px rgba(3, 42, 60, 0.25), 0 10px 10px rgba(3, 42, 60, 0.22);
+  -webkit-transition: -webkit-transform .15s ease-in-out;
+  transition: -webkit-transform .15s ease-in-out;
+  transition: transform .15s ease-in-out;
+  transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
+  &:hover {
+    background-color: $primary-color-dark;
+    transform: translateY(-2px);
+  }
+}
+
+.content {
+  padding-left: 10px;
+  text-align: justify;
+}
+
+.cartagena {
+  background-image: url("cartagena.png");
+}
+
+.lisbon {
+  background-image: url("lisbon.png");
+}
+.spacer {
+  display: none;
+  height: 128px;
+  width: 100vw;
+}
+.unclass {
+  width: 100vw;
+  min-height: 332px;
+  height: 50vh;
+  background-image: url("rendezbackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+  background-position: center;
+}
+
+.fluid-cont {
+  margin-top: 20px;
+  width: 100vw;
+  overflow: hidden;
+  padding: 0 15vw;
+}
+.pb60 {
+  padding-bottom: 60px;
+}
+
+.pt40 {
+  padding-top: 40px;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+
+
+
+.bl-header {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 20vw;
+  left: 27vw;
+  font-size: 46px !important;
+}
+
+.avatar-holder {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  padding: 0px 30px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pb40 {
+  padding-bottom: 40px;
+}
+
+.slant {
+  width: 100vw;
+  height: 20vw;
+  min-height: 250px;
+}
+
+.br {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  text-align: right;
+  line-height: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .br {
+    line-height: 40px;
+  }
+  .unclas-image {
+    margin-top: 128px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .left-logo {
+    height: 110px;
+    width: 110px;
+  }
+  .unclas-image {
+    display:none
+  }
+  .unclass {
+    display: block;
+  }
+  .spacer {
+    display: block;
+  }
+
+  .bl-header {
+    top: 200px;
+    right: 27vw;
+  }
+  .unclas-image {
+    margin-top: 128px;
+    min-height: 300px;
+  }
+  h1 {
+    font-size: 22px
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .left-logo {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  .fluid-cont {
+    padding: 0 5vw;
+  }
+  .shaped {
+    height: calc(45vw * 0.726);
+    width:45vw;
+  }
+  .unclas-image {
+    margin-top: 128px;
+  }
+  h1 {
+    font-size: 18px
+  }
+  p {
+    font-size: 10px;
+  }
+}
