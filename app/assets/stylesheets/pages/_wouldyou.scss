@@ -91,12 +91,12 @@ h1 {
 }
 
 .wouldyou {
-  background-image: url("would_you.png");
+  background-image: url("https://s3.eu-west-3.amazonaws.com/rendezvoushotel/would_you.png");
   background-position: left;
 }
 
 .contact {
-  background-image: url("palms.png");
+  background-image: url("https://s3.eu-west-3.amazonaws.com/rendezvoushotel/palms.png");
   background-position: center;
 }
 
@@ -174,7 +174,7 @@ h1 {
 }
 
 .cartagena {
-  background-image: url("cartagena.png");
+  background-image: url("https://s3.eu-west-3.amazonaws.com/rendezvoushotel/cartagena.png");
 }
 
 .lisbon {
@@ -189,7 +189,7 @@ h1 {
   width: 100vw;
   min-height: 332px;
   height: 50vh;
-  background-image: url("rendezbackground.png");
+  background-image: url("https://s3.eu-west-3.amazonaws.com/rendezvoushotel/lisbon.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: none;
