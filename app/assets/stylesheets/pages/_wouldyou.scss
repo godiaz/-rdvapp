@@ -17,6 +17,7 @@
     margin-top: 0px;
     color: rgba(0,0,0,0.7);
     font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
   }
   h2 {
     font-size: 17px;
@@ -62,6 +63,7 @@ h1 {
 .headers {
   text-align: center;
   font-weight: bold;
+  font-size: 34px;
 }
 
 .would-you {
@@ -149,11 +151,12 @@ h1 {
 
 .main-button {
   cursor: pointer;
-  background-color: #F45B69;
+  background-color: $primary-color;
   color: white;
   width: 300px;
-  font-size: 28px;
-  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 10px 20px;
   border-radius: 3px;
   text-align: center;
   -webkit-box-shadow: 0 0 0 0.5px rgba(3, 42, 60, 0.2), 0 0 0 1px rgba(3, 42, 60, 0.1), 0 14px 28px rgba(3, 42, 60, 0.25), 0 10px 10px rgba(3, 42, 60, 0.22);
@@ -171,14 +174,17 @@ h1 {
 .content {
   padding-left: 10px;
   text-align: justify;
+  font-size: 14px;
 }
 
 .cartagena {
   background-image: url("https://s3.eu-west-3.amazonaws.com/rendezvoushotel/cartagena.png");
+  margin: 0 20px 20px 0;
 }
 
 .lisbon {
   background-image: url("https://s3.eu-west-3.amazonaws.com/rendezvoushotel/lisbon.png");
+  margin: 0 20px 20px 0;
 }
 .spacer {
   display: none;

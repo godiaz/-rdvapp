@@ -9,7 +9,7 @@
 
     &_first-section {
       width: 100%;
-      height: 120px;
+      height: 110px;
       background-color: white;
       display: flex;
       justify-content: space-between;
@@ -76,7 +76,7 @@
 
     &_second-section {
       width: 100%;
-      height: 60px;
+      height: 35px;
       padding-top: 5px;
       background-color: white;
       display: flex;
@@ -84,13 +84,13 @@
       // align-items: flex-end;
 
       a {
-        font-size: 18px;
+        font-size: 16px;
         font-family: 'Open Sans', sans-serif;
         color: $secondary-color;
         font-weight: 600;
         opacity: 0.5;
         transition: opacity 0.3s ease-in-out;
-        padding: 0 20px;
+        padding: 0 40px;
 
         &:hover {
           text-decoration: none;

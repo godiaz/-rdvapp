@@ -15,6 +15,7 @@
         url('https://s3.eu-west-3.amazonaws.com/rendezvoushotel/home-page.png');
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: bottom;
 
       display: flex;
       flex-direction: column;
@@ -61,7 +62,7 @@
 
    &_section-two {
      width: 100%;
-     padding: 140px 60px;
+     padding: 100px 60px;
 
      & h1 {
        color: black;

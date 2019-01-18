@@ -14,17 +14,16 @@
       background-position: top;
       width: 100%;
       height: auto;
-      min-height: 900px;
+      min-height: 800px;
       display: flex;
       justify-content: center;
       align-items: center;
 
       & span {
         background-image: url('https://s3.eu-west-3.amazonaws.com/rendezvoushotel/whitelogo.png');
-        height: 450px;
-        width: 450px;
+        height: 350px;
+        width: 350px;
         background-size: cover;
-        background-position: top;
       }
     }
 
@@ -40,7 +39,7 @@
         padding: 5px 30px;
 
         & h4 {
-          font-size: 48px;
+          font-size: 40px;
           font-family: 'Open-Sans', sans-serif;
           color: $secondary-color;
           padding: 20px;
@@ -49,7 +48,7 @@
       }
 
       &_text {
-        font-size: 22px;
+        font-size: 18px;
         font-family: 'Open-Sans', sans-serif;
         font-weight: 300;
         color: $secondary-color;
