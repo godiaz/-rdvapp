@@ -38,6 +38,12 @@
 .developed {
   margin: 0;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
+  & a {
+    color: white;
+  }
 }
 .footer-content {
   width: 100%;
