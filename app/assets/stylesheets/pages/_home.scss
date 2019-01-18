@@ -22,7 +22,7 @@
       padding: 40px;
 
       & h4 {
-        font-size: 76px;
+        font-size: 72px;
         font-weight: 'Open-sans', sans-serif;
         font-weight: 600;
         color: white;
@@ -30,7 +30,7 @@
       }
 
       & p {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 'Open-sans', sans-serif;
         color: white;
         padding: 5px;
@@ -39,10 +39,10 @@
       & span {
         background-color: $primary-color;
         color: white;
-        width: 300px;
-        font-size: 28px;
+        width: 250px;
+        font-size: 20px;
         padding: 10px 30px;
-        margin-top: 80px;
+        margin-top: 60px;
         border-radius: 3px;
         text-align: center;
         box-shadow:
@@ -61,7 +61,7 @@
 
    &_section-two {
      width: 100%;
-     padding: 180px 60px;
+     padding: 140px 60px;
 
      & h1 {
        color: black;
@@ -84,7 +84,7 @@
        padding: 5px 30px;
 
        & h4 {
-         font-size: 48px;
+         font-size: 40px;
          font-family: 'Open-Sans', sans-serif;
          color: $secondary-color;
          padding: 20px;
@@ -268,7 +268,7 @@
        padding: 5px 30px;
 
        & h4 {
-         font-size: 48px;
+         font-size: 40px;
          font-family: 'Open-Sans', sans-serif;
          color: $secondary-color;
          padding: 20px;
