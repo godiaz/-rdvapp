@@ -3,7 +3,9 @@
   <section class="home-page_section-one">
     <h4>#UNCLASSIFIABLE</h4>
     <p>#YESIDARE #WOULDYOU?</p>
-    <span>Learn More</span>
+    <%= link_to unclassifiable_path, class: "home-page_section-one_button" do %>
+      <span>Learn More</span>
+    <% end %>
   </section>
   <section class="home-page_section-two">
     <h1>
@@ -21,7 +23,9 @@
           <h4>Cartagena, COLOMBIA</h4>
           <p>DATES:<br>APRIL 5 TO 15, 2019</p>
           <p>HOTEL:<br>HOTEL LEGEND SOFITEL SANTA CLARA</p>
-          <span class="home-page_section-three_card-box_first-card_text_button">Would you?</span>
+          <%= link_to wouldyou_path, class: "home-page_section-three_card-box_first-card_text_button" do %>
+              <span>Would you?</span>
+          <% end %>
         </div>
       </div>
       <div class="home-page_section-three_card-box_second-card">
@@ -29,13 +33,15 @@
           <h4>Lisboa, PORTUGAL</h4>
           <p>DATES:<br>October 15th to 20th, 2019</p>
           <p>HOTEL:<br>PESTANA PALACE</p>
-          <span class="home-page_section-three_card-box_second-card_text_button">Would you?</span>
+          <%= link_to wouldyou_path, class: "home-page_section-three_card-box_second-card_text_button" do %>
+            <span>Would you?</span>
+          <% end %>
         </div>
         <div class="home-page_section-three_card-box_second-card_image"></div>
       </div>
     </div>
   </section>
-  <section class="home-page_section-four">
+  <section class="home-page_section-four" id="past-events">
     <div class="home-page_section-four_header">
       <h4>Past Editions</h4>
     </div>
@@ -45,15 +51,7 @@
         <div class="home-page_section-four_card-box_first-card_text">
           <h4>Vienna, Austria</h4>
           <p>Park Hyatt, February 2018</p>
-          <span class="home-page_section-four_card-box_first-card_button" id="myBtn">Learn More</span>
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>This is modal number 1</p>
-            </div>
-          </div>
+          <a class="home-page_section-four_card-box_first-card_button" href="#popup">Learn More</a>
         </div>
       </div>
       <div class="home-page_section-four_card-box_second-card">
@@ -61,16 +59,7 @@
         <div class="home-page_section-four_card-box_second-card_text">
           <h4>Saint-Vincent, Italia</h4>
           <p>Grand Hotel Billia, June 2016</p>
-          <span class="home-page_section-four_card-box_second-card_button" id="myBtn">Learn More</span>
-          <!-- The Modal -->
-          <div id="myModal2" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <p>This is modal number 2</p>
-            </div>
-          </div>
+          <a class="home-page_section-four_card-box_second-card_button" href="#popup2">Learn More</a>
         </div>
       </div>
       <div class="home-page_section-four_card-box_third-card">
@@ -78,37 +67,61 @@
         <div class="home-page_section-four_card-box_third-card_text">
           <h4>Paris, France</h4>
           <p>Hotel du Colllectionneur, November 2015</p>
-          <span class="home-page_section-four_card-box_third-card_button">Learn More</span>
+          <a class="home-page_section-four_card-box_third-card_button" href="#popup3">Learn More</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- IN HERE ALL THE POP UPS -->
+  <div class="popup" id="popup">
+      <div class="popup_content">
+        <div class="popup_left">
+          <%= image_tag 'https://images.pexels.com/photos/244996/pexels-photo-244996.jpeg?cs=srgb&dl=auto-automobiles-cars-244996.jpg&fm=jpg', class: "popup_img" %>
+          <%= image_tag 'https://images.pexels.com/photos/189454/pexels-photo-189454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
+        </div>
+        <div class="popup_right">
+          <a href="#past-events" class="popup_close">&times;</a>
+          <h2 class="popup_header">Vienna, Austria</h2>
+          <h3 class="popup_small-header">International Hotel Aughs Ein Fermnann</h3>
+          <p class="popup_text">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+          </p>
+        </div>
+      </div>
+  </div>
+
+  <div class="popup" id="popup2">
+      <div class="popup_content">
+        <div class="popup_left">
+          <%= image_tag 'https://images.pexels.com/photos/7522/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
+          <%= image_tag 'https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
+        </div>
+        <div class="popup_right">
+          <a href="#past-events" class="popup_close">&times;</a>
+          <h2 class="popup_header">Sain-Vincent, Italia</h2>
+          <h3 class="popup_small-header">International Hotel Aughs Ein Fermnann</h3>
+          <p class="popup_text">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+          </p>
+        </div>
+      </div>
+  </div>
+
+  <div class="popup" id="popup3">
+      <div class="popup_content">
+        <div class="popup_left">
+          <%= image_tag 'https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
+          <%= image_tag 'https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
+        </div>
+        <div class="popup_right">
+          <a href="#past-events" class="popup_close">&times;</a>
+          <h2 class="popup_header">Paris, France</h2>
+          <h3 class="popup_small-header">International Hotel Aughs Ein Fermnann</h3>
+          <p class="popup_text">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+          </p>
+        </div>
+      </div>
+  </div>
 </div>
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
