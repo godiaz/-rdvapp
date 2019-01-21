@@ -42,7 +42,7 @@
         padding: 5px;
       }
 
-      & span {
+      &_button {
         background-color: $primary-color;
         color: white;
         width: 250px;
@@ -61,6 +61,8 @@
         &:hover {
           background-color: $primary-color-dark;
           transform: translateY(-2px);
+          text-decoration: none;
+          color: white;
         }
       }
    }
@@ -160,7 +162,6 @@
              background-color: $primary-color;
              border-radius: 5px;
              color: white;
-             font-family: 'Raleway', sans-serif;
              font-weight: 300;
              font-size: 22px;
              margin: 30px 10px 10px 10px;
@@ -172,9 +173,12 @@
                0 10px 10px rgba(3,42,60,.22);
              transition: transform .15s ease-in-out;
 
-             &:hover {
+             &:hover,
+             &:active {
                background-color: $primary-color-dark;
                transform: translateY(-2px);
+               text-decoration: none;
+               color: white;
              }
            }
          }
@@ -231,7 +235,6 @@
              background-color: $primary-color;
              border-radius: 5px;
              color: white;
-             font-family: 'Raleway', sans-serif;
              font-weight: 300;
              font-size: 22px;
              margin: 30px 10px 10px 10px;
@@ -243,9 +246,12 @@
                0 10px 10px rgba(3,42,60,.22);
              transition: transform .15s ease-in-out;
 
-             &:hover {
+             &:hover,
+             &:active {
                background-color: $primary-color-dark;
                transform: translateY(-2px);
+               text-decoration: none;
+               color: white;
              }
            }
          }
@@ -550,7 +556,7 @@
         padding: 5px;
       }
 
-      & span {
+      &_button {
         background-color: $primary-color;
         color: white;
         width: 200px;
@@ -1071,7 +1077,7 @@
         padding: 5px;
       }
 
-      & span {
+      &_button {
         background-color: $primary-color;
         color: white;
         width: 170px;
@@ -1309,40 +1315,3 @@
 }
 
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
