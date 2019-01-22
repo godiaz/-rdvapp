@@ -110,3 +110,36 @@
   }
 
 }
+
+
+@media only screen and (max-width: 768px) {
+  .popup {
+
+    &_left {
+      width: 33.3333333%;
+      display: none;
+    }
+
+      &_text {
+        font-size: 10px;
+      }
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .popup {
+
+    &_left {
+      width: 33.3333333%;
+      display: none;
+    }
+
+      &_text {
+        font-size: 10px;
+      }
+
+  }
+
+}
