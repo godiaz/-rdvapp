@@ -21,8 +21,9 @@
         <div class="home-page_section-three_card-box_first-card_image"></div>
         <div class="home-page_section-three_card-box_first-card_text">
           <h4>Cartagena, COLOMBIA</h4>
-          <p>DATES:<br>APRIL 5 TO 15, 2019</p>
-          <p>HOTEL:<br>HOTEL LEGEND SOFITEL SANTA CLARA</p>
+          <p>DATES:<br> APRIL 5 TO 15, 2019</p>
+          <p>HOTEL:<br> HOTEL LEGEND SOFITEL SANTA CLARA</p>
+
           <%= link_to wouldyou_path, class: "home-page_section-three_card-box_first-card_text_button" do %>
               <span>Would you?</span>
           <% end %>
@@ -33,6 +34,7 @@
           <h4>Lisboa, PORTUGAL</h4>
           <p>DATES:<br>October 15th to 20th, 2019</p>
           <p>HOTEL:<br>PESTANA PALACE</p>
+
           <%= link_to wouldyou_path, class: "home-page_section-three_card-box_second-card_text_button" do %>
             <span>Would you?</span>
           <% end %>
@@ -46,30 +48,105 @@
       <h4>Past Editions</h4>
     </div>
     <div class="home-page_section-four_card-box">
-      <div class="home-page_section-four_card-box_first-card">
-        <div class="home-page_section-four_card-box_first-card_image"></div>
-        <div class="home-page_section-four_card-box_first-card_text">
+
+      <!-- Vienna, Austria -->
+      <div class="card">
+        <div class="card_image">
+          <%= image_tag 'https://images.pexels.com/photos/208755/pexels-photo-208755.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' %>
+        </div>
+        <div class="card_text">
           <h4>Vienna, Austria</h4>
           <p>Park Hyatt, February 2018</p>
-          <a class="home-page_section-four_card-box_first-card_button" href="#popup">Learn More</a>
+          <a class="card_button" href="#popup3">Learn More</a>
         </div>
       </div>
-      <div class="home-page_section-four_card-box_second-card">
-        <div class="home-page_section-four_card-box_second-card_image"></div>
-        <div class="home-page_section-four_card-box_second-card_text">
+
+      <!-- Saint-Vincent, Italia -->
+      <div class="card">
+        <div class="card_image">
+          <%= image_tag 'https://images.pexels.com/photos/208755/pexels-photo-208755.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' %>
+        </div>
+        <div class="card_text">
           <h4>Saint-Vincent, Italia</h4>
           <p>Grand Hotel Billia, June 2016</p>
-          <a class="home-page_section-four_card-box_second-card_button" href="#popup2">Learn More</a>
+          <a class="card_button" href="#popup3">Learn More</a>
         </div>
       </div>
-      <div class="home-page_section-four_card-box_third-card">
-        <div class="home-page_section-four_card-box_third-card_image"></div>
-        <div class="home-page_section-four_card-box_third-card_text">
+
+
+      <!-- Paris, France -->
+      <div class="card">
+        <div class="card_image">
+          <%= image_tag 'https://images.pexels.com/photos/208755/pexels-photo-208755.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' %>
+        </div>
+        <div class="card_text">
           <h4>Paris, France</h4>
           <p>Hotel du Colllectionneur, November 2015</p>
-          <a class="home-page_section-four_card-box_third-card_button" href="#popup3">Learn More</a>
+          <a class="card_button" href="#popup3">Learn More</a>
         </div>
       </div>
+
+      <!-- STOCKHOLM SWEDEN -->
+      <div class="card">
+        <div class="card_image">
+          <%= image_tag 'https://images.pexels.com/photos/208755/pexels-photo-208755.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' %>
+        </div>
+        <div class="card_text">
+          <h4>Sotckholm, Sweden</h4>
+          <p>Grand Hôtel, May 2015</p>
+          <a class="card_button" href="#popup3">Learn More</a>
+        </div>
+      </div>
+
+      <!-- HAMBURG GERMANY -->
+      <div class="card">
+        <div class="card_image">
+          <%= image_tag 'https://images.pexels.com/photos/21014/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260' %>
+        </div>
+        <div class="card_text">
+          <h4>Hamburg, Germany</h4>
+          <p>Gastwerk, April 2015</p>
+          <a class="card_button" href="#popup3">Learn More</a>
+        </div>
+      </div>
+
+      <!-- ALGARVE, PORTUGAL -->
+      <div class="card">
+        <div class="card_image">
+          <%= image_tag 'https://images.pexels.com/photos/21014/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260' %>
+        </div>
+        <div class="card_text">
+          <h4>Algarve, Portugal</h4>
+          <p>Conrad Hotel, October 2014</p>
+          <a class="card_button" href="#popup3">Learn More</a>
+        </div>
+      </div>
+
+      <!-- AMSTERDAM, NETHERDLANDS -->
+      <div class="card">
+        <div class="card_image">
+          <%= image_tag 'https://images.pexels.com/photos/21014/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260' %>
+        </div>
+        <div class="card_text">
+          <h4>Amsterdam, Netherlands</h4>
+          <p>Conservatorium Hotel, June 2014</p>
+          <a class="card_button" href="#popup3">Learn More</a>
+        </div>
+      </div>
+
+      <!-- IBIZA, SPAIN -->
+      <div class="card">
+        <div class="card_image">
+          <%= image_tag 'https://images.pexels.com/photos/21014/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260' %>
+        </div>
+        <div class="card_text">
+          <h4>Ibiza, Spain </h4>
+          <p>Ibiza Grand Hotel, May 2013</p>
+          <a class="card_button" href="#popup3">Learn More</a>
+        </div>
+      </div>
+
+
     </div>
   </section>
 

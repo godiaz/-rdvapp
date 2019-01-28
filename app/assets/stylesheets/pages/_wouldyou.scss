@@ -70,7 +70,7 @@ h1 {
   text-align: right;
   font-weight: bold;
   padding-bottom: 10px;
-  border-bottom: 8px solid $primary-color;
+  border-bottom: 5px solid $primary-color;
   padding-right: 30px;
 }
 
@@ -100,19 +100,6 @@ h1 {
 .contact {
   background-image: url("https://s3.eu-west-3.amazonaws.com/rendezvoushotel/palms.png");
   background-position: center;
-}
-
-.banner-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.3);
-
-  & h1 {
-    font-size: 68px;
-  }
 }
 
 .bottom-left {
@@ -253,6 +240,10 @@ h1 {
   padding: 0px 30px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+
+  & p {
+    font-size: 18px;
+  }
 }
 
 .pb40 {

@@ -28,7 +28,7 @@
     }
 
     &_content {
-      padding: 70px 40px;
+      padding: 50px 40px;
 
       &_header {
         width: 100%;
@@ -52,6 +52,7 @@
         font-weight: 400;
         color: $secondary-color;
         padding: 70px 20px 60px 20px;
+        text-align: center;
       }
 
     }
