@@ -1,3 +1,225 @@
 .avatar-img {
   height: 280px;
 }
+
+.contact {
+
+  &_banner {
+      height: 700px;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+
+      &_header {
+          color: white;
+          font-size: 200px;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 600;
+
+      }
+
+  }
+
+  &_details {
+    height: 40px;
+    width: 100%;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & h1:nth-child(1) {
+      font-size: 20px;
+      // font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      color: white;
+      margin: 0;
+    }
+
+    & h1:nth-child(2) {
+      font-size: 20px;
+      // font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      color: white;
+      margin: 0;
+    }
+
+    & h1:nth-child(3) {
+      font-size: 20px;
+      // font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      color: white;
+      margin: 0;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 1450px) {
+    .contact {
+
+      &_banner {
+          height: 700px;
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+
+          &_header {
+              color: white;
+              font-size: 140px;
+              font-family: 'Raleway', sans-serif;
+              font-weight: 600;
+
+          }
+
+      }
+
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+    .contact {
+
+      &_banner {
+          height: 700px;
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+
+          &_header {
+              color: white;
+              font-size: 100px;
+              font-family: 'Raleway', sans-serif;
+              font-weight: 600;
+
+          }
+
+      }
+
+    }
+
+}
+
+@media only screen and (max-width: 736px) {
+    .contact {
+
+      &_banner {
+          height: 700px;
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+
+          &_header {
+              color: white;
+              font-size: 50px;
+              font-family: 'Raleway', sans-serif;
+              font-weight: 600;
+
+          }
+
+      }
+
+      &_details {
+        height: 40px;
+        width: 100%;
+        background-color: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        & h1:nth-child(1) {
+          font-size: 12px;
+          // font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          color: white;
+          margin: 0;
+        }
+
+        & h1:nth-child(2) {
+          font-size: 12px;
+          // font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          color: white;
+          margin: 0;
+        }
+
+        & h1:nth-child(3) {
+          font-size: 12px;
+          // font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          color: white;
+          margin: 0;
+        }
+      }
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contact {
+
+      &_banner {
+          height: 700px;
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+
+          &_header {
+              color: white;
+              font-size: 40px;
+              font-family: 'Raleway', sans-serif;
+              font-weight: 600;
+
+          }
+
+      }
+
+      &_details {
+        height: 40px;
+        width: 100%;
+        background-color: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        & h1:nth-child(1) {
+          font-size: 9px;
+          // font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          color: white;
+          margin: 0;
+        }
+
+        & h1:nth-child(2) {
+          font-size: 9px;
+          // font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          color: white;
+          margin: 0;
+        }
+
+        & h1:nth-child(3) {
+          font-size: 9px;
+          // font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          color: white;
+          margin: 0;
+        }
+      }
+
+    }
+
+    .avatar-img {
+      height: 260px;
+    }
+
+}
+
