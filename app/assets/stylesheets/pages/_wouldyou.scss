@@ -1,4 +1,51 @@
-#about {
+.wouldyou {
+
+    &_events {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &_image {
+        height: 600px;
+        width: 700px;
+        background-size: contain;
+        background-repeat: no-repeat
+      }
+
+      &_header {
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        margin-top: 15px;
+        color: rgba(0,0,0,0.7);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        border-bottom: 4px solid $primary-color;
+        width: 50%;
+        text-align: center;
+      }
+
+      &_description {
+       height: 400px;
+       width: 1000px;
+       background-size: cover;
+       background-repeat: no-repeat;
+       padding: 20px 0;
+      }
+
+      &_bottom {
+        font-size: 36px;
+        font-weight: 600;
+      }
+
+    }
+}
+
+
+
+about {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -314,9 +361,95 @@ h1 {
   p {
     font-size: 12px;
   }
+
+  .wouldyou {
+
+      &_events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &_image {
+          height: 600px;
+          width: 700px;
+          background-size: contain;
+          background-repeat: no-repeat
+        }
+
+        &_header {
+          font-size: 30px;
+          font-weight: bolder;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          margin-top: 15px;
+          color: rgba(0,0,0,0.7);
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 700;
+          border-bottom: 4px solid $primary-color;
+          width: 50%;
+          text-align: center;
+        }
+
+        &_description {
+         height: 250px;
+         width: 800px;
+         background-size: cover;
+         background-repeat: no-repeat;
+         padding: 20px 0;
+        }
+
+      }
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
+  .wouldyou {
+
+      &_events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &_image {
+          height: 200px;
+          width: 300px;
+          background-size: contain;
+          background-repeat: no-repeat
+        }
+
+        &_header {
+          font-size: 20px;
+          font-weight: bolder;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          margin-top: 15px;
+          color: rgba(0,0,0,0.7);
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 700;
+          border-bottom: 4px solid $primary-color;
+          width: 50%;
+          text-align: center;
+        }
+
+        &_description {
+         height: 150px;
+         width: 350px;
+         background-size: cover;
+         background-repeat: no-repeat;
+         padding: 20px 0;
+        }
+
+        &_bottom {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+      }
+  }
+
   .left-logo {
     height: 90px;
     width: 90px;
@@ -349,5 +482,99 @@ h1 {
 }
 
 @media only screen and (max-width: 700px) {
+
+  .wouldyou {
+
+      &_events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &_image {
+          height: 200px;
+          width: 300px;
+          background-size: contain;
+          background-repeat: no-repeat
+        }
+
+        &_header {
+          font-size: 20px;
+          font-weight: bolder;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          margin-top: 15px;
+          color: rgba(0,0,0,0.7);
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 700;
+          border-bottom: 4px solid $primary-color;
+          width: 50%;
+          text-align: center;
+        }
+
+        &_description {
+         height: 150px;
+         width: 350px;
+         background-size: cover;
+         background-repeat: no-repeat;
+         padding: 20px 0;
+        }
+
+        &_bottom {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+      }
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .wouldyou {
+
+      &_events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &_image {
+          height: 200px;
+          width: 300px;
+          background-size: contain;
+          background-repeat: no-repeat
+        }
+
+        &_header {
+          font-size: 18px;
+          font-weight: bolder;
+          margin-bottom: 30px;
+          padding-bottom: 10px;
+          margin-top: 15px;
+          color: rgba(0,0,0,0.7);
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 700;
+          border-bottom: 4px solid $primary-color;
+          width: 50%;
+          text-align: center;
+        }
+
+        &_description {
+         height: 150px;
+         width: 280px;
+         background-size: cover;
+         background-repeat: no-repeat;
+         padding: 20px 0;
+        }
+
+        &_bottom {
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+      }
+  }
 
 }
