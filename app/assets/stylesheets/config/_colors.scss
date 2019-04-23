@@ -23,8 +23,64 @@ $third-color: #F2F2F2;
 
 
 @mixin absCenter {
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin absCenterSA {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin absCenterSB {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin absCenterColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin absCenterColumnReverse {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin absCenterColumnSA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+.phone-only {
+ @include for-tablet-portrait-up {
+  display: none;
+ }
 }

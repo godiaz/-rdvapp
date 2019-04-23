@@ -1,0 +1,40 @@
+.next-editions {
+
+  &_header {
+    border-bottom: 8px solid $primary-color;
+    font-family: $main-font;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding: 0 20px;
+  }
+
+  &_this-year {
+    border-bottom: 8px solid $primary-color;
+    background-color: #F2F2F2;
+    & h3:first-child {
+      font-family: $main-font;
+      font-weight: 600;
+      margin-top: 0px;
+      padding: 20px 20px 0 20px;
+
+      @include for-phone-only {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &_next-year {
+    border-bottom: 8px solid $primary-color;
+    background-color: #F2F2F2;
+    & h3:first-child {
+      font-family: $main-font;
+      font-weight: 600;
+      margin-top: 0px;
+      padding: 20px 20px 0 20px;
+
+      @include for-phone-only {
+        font-size: 16px;
+      }
+    }
+  }
+}

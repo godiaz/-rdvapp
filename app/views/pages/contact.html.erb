@@ -1,82 +1,72 @@
 <div class="white-space"></div>
-
-<!-- <div class="contact">
-  <section class="contact_banner">
-    <h1 class="contact_banner_header"><i class="fab fa-instagram"></i>#YES I DARE</h1>
-  </section>
-  <section class="contact_info">
-    <div class="contact_info_header">
-      <h3>Meet Our Team</h3>
-    </div>
-    <div class="contact_info_team">
-      <div class="avatar_holder">
-        <div class="avatar">
-          <%= image_tag 'alexandre.png', class: "avatar-img" %>
-          <h3>Alexandre Olive</h3>
-          <h4>Founder</h4>
-          <p>alexandre@rendezvous-ihf.com</p>
-        </div>
-      </div>
-      <div class="avatar_holder">
-        <div class="avatar pb40">
-          <%= image_tag 'estelle.png', class: "avatar-img" %>
-          <h3>Estelle Bernière</h3>
-          <h4>European Office Manager</h4>
-          <p>saleseurope@rendez-vous-ihf.com</p>
-        </div>
-      </div>
-      <div class="avatar_holder">
-        <div class="avatar pb40">
-          <%= image_tag 'arnaud.png', class: "avatar-img" %>
-          <h3>Arnaud Hudaverdian</h3>
-          <h4>LatAm Office Manager</h4>
-          <p>sales@rendezvous-ihf.com</p>
-        </div>
+<div class="contact">
+  <div class="contact_first">
+    <%= image_tag 'white-logo.png' %>
+    <h3>Contact Our Team</h3>
+  </div>
+  <div class="contact_second">
+    <div class="contact_second_first-row">
+      <div class="avatar">
+        <%= image_tag 'alexandre.png' %>
+        <h4>Alexandre Olive</h4>
+        <h5>Founder</h5>
+        <h6>alexandre@rendezvous-ihf.com</h6>
       </div>
     </div>
-  </section>
-
-</div> -->
-
-
-<div class="banner-img contact">
-  <section class="contact_banner">
-    <h1 class="contact_banner_header"><i class="fab fa-instagram"></i>#YES I DARE</h1>
-  </section>
-</div>
-<h1 class="would-you tar">Meet Our Team</h1>
-<div class="avatar-holder">
-  <div class="avatar">
-    <%= image_tag 'alexandre.png', class: "avatar-img" %>
-    <h3>Alexandre Olive</h3>
-    <h4>Founder</h4>
-    <p>alexandre@rendezvous-ihf.com</p>
+    <div class="contact_second_second-row">
+      <div class="avatar">
+        <%=  image_tag 'estelle.png' %>
+        <h4>Estelle Bernière</h4>
+        <h5>European Office Manager</h5>
+        <h6>saleseurope@rendezvous-ihf.com</h6>
+      </div>
+      <div class="avatar">
+        <%= image_tag 'arnaud.png' %>
+        <h4>Arnaud Hudaverdian</h4>
+        <h5>Latam Office Manager</h5>
+        <h6>sales@rendezvous-ihf.com</h6>
+      </div>
+    </div>
+    <div class="contact_third" id="cform">
+      <a href="#testing" class="contact_third_button"> Contact Us</a>
+    </div>
   </div>
 </div>
-<div class="avatar-holder">
-  <div class="avatar pb40">
-    <%= image_tag 'estelle.png', class: "avatar-img" %>
-    <h3>Estelle Bernière</h3>
-    <h4>European Office Manager</h4>
-    <p>saleseurope@rendez-vous-ihf.com</p>
-  </div>
-  <div class="avatar pb40">
-    <%= image_tag 'arnaud.png', class: "avatar-img" %>
-    <h3>Arnaud Hudaverdian</h3>
-    <h4>LatAm Office Manager</h4>
-    <p>sales@rendezvous-ihf.com</p>
+
+<div id="testing" class="contact-form">
+  <div class="contact-form_content">
+    <a href="#cform" class="contact-form_close">&times;</a>
+    <form action="https://formspree.io/sales@rendezvous-ihf.com" method="POST" id="rdvform"/>
+      <h2>#DOBUSINESS</h2>
+      <div class="form_first">
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="company" name="company" placeholder="Company">
+        <input type="position" name="position" placeholder="Position">
+      </div>
+      <div class="form_second">
+
+        <input type="email" name="email" placeholder="Email">
+
+        <div class="form-group hidden-xs hidden-sm">
+          <label for="buyer">I am :</label>
+          <select multiple name="buyer" id="rdvform" class="form-control">
+            <option value="Buyer">Buyer</option>
+            <option value="Hotel">Hotel</option>
+          </select>
+        </div>
+
+        <div class="form-group hidden-xs hidden-sm">
+          <label for="edition"> I am Interested in:</label>
+          <select multiple name="edition" id="rdvform" class="form-control">
+            <option value="Lisboa Edition">Lisboa Edition</option>
+            <option value="Megève Edition">Megève Edition</option>
+            <option value="Cartagena Edition">Cartagena Edition</option>
+            <option value="Monaco Edition">Monaco Edition</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="Send" class="form_button">
+    </form>
   </div>
 </div>
-<section class="contact_details">
-  <h1>Call Us:</h1>
-  <h1>France: +33 343.343.2222</h1>
-  <h1>Colombia: +57 358.15.23</h1>
-</section>
 
-<!-- <div style="position:relative;height: 20vw;
-  min-height: 250px;">
-  <%= image_tag 'slant.png', class: "slant" %>
-  <img src="/images/slant.png" alt="/slant" class="slant">
-  <img/>
-  <h1 class="br">For more information <br/>call us at +1800-232-RENDEZVOUS</h1>
-</div> -->

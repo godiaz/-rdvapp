@@ -9,39 +9,77 @@
   </section>
   <section class="home-page_section-two">
     <h1>
-      Rendez-Vous is an International Luxury Hotel Forum that creates unique partnerships between the best hotels in the world and the most important MICE buyers.
+      RENDEZ VOUS IHF is an International Luxury Hotel Forum that creates unique partnerships between the best hotels in the world and the most important MICE buyers.
     </h1>
   </section>
-  <section class="home-page_section-three">
-    <div class="home-page_section-three_header">
-      <h4>Would you?</h4>
-    </div>
-    <div class="home-page_section-three_card-box">
-      <div class="home-page_section-three_card-box_first-card">
-        <div class="home-page_section-three_card-box_first-card_image"></div>
-        <div class="home-page_section-three_card-box_first-card_text">
-          <h4>Cartagena, COLOMBIA</h4>
-          <p>DATES:<br> APRIL 5 TO 15, 2019</p>
-          <p>HOTEL:<br> HOTEL LEGEND SOFITEL SANTA CLARA</p>
-
-          <%= link_to wouldyou_path, class: "home-page_section-three_card-box_first-card_text_button" do %>
-              <span>Would you?</span>
-          <% end %>
+  <section class="next-editions">
+    <h1 class="next-editions_header">Next Editions</h1>
+      <div class="next-editions_this-year">
+        <h3>2019</h3>
+        <div class="left-card">
+          <div class="left-card_image">
+            <%= image_tag 'pestana.png' %>
+          </div>
+          <div class="left-card_content">
+            <h4>LISBOA, PORTUGAL</h4>
+            <h5>Dates</h5>
+            <p><b>October 15 to 18, 2019</b></p>
+            <h5>Host Hotel</h5>
+            <p><b>Pestana Palace</b></p>
+            <%= link_to hotels_path do %>
+              <button>JOIN</button>
+            <% end %>
+          </div>
         </div>
       </div>
-      <div class="home-page_section-three_card-box_second-card">
-        <div class="home-page_section-three_card-box_second-card_text">
-          <h4>Lisboa, PORTUGAL</h4>
-          <p>DATES:<br>October 15th to 20th, 2019</p>
-          <p>HOTEL:<br>PESTANA PALACE</p>
-
-          <%= link_to wouldyou_path, class: "home-page_section-three_card-box_second-card_text_button" do %>
-            <span>Would you?</span>
-          <% end %>
+      <div class="next-editions_next-year">
+        <h3>2020</h3>
+        <div class="right-card">
+          <div class="right-card_content">
+            <h4>MEGÉVE, FRANCE</h4>
+            <h5>Dates</h5>
+            <p><b>March 24 to 27, 2020</b></p>
+            <h5>Host Hotel</h5>
+            <p><b>Les Chalets du Monts d’Arbois Four Seasons </b></p>
+            <%= link_to hotels_path do %>
+              <button>JOIN</button>
+            <% end %>
+          </div>
+          <div class="right-card_image">
+            <%= image_tag 'megeve.png' %>
+          </div>
         </div>
-        <div class="home-page_section-three_card-box_second-card_image"></div>
+        <div class="left-card">
+          <div class="left-card_image">
+            <%= image_tag 'santaclara.png' %>
+          </div>
+          <div class="left-card_content">
+            <h4>CARTAGENA DE INDIAS, COLOMBIA</h4>
+            <h5>Dates</h5>
+            <p><b>April 9 to 12, 2020</b></p>
+            <h5>Host Hotel</h5>
+            <p><b>Sofitel Santa Clara</b></p>
+            <%= link_to hotels_path do %>
+              <button>JOIN</button>
+            <% end %>
+          </div>
+        </div>
+        <div class="right-card">
+          <div class="right-card_content">
+            <h4>MONACO</h4>
+            <h5>Dates</h5>
+            <p><b>October 26 to 29, 2020</b></p>
+            <h5>Host Hotel</h5>
+            <p><b>Hotel l’Hermitage</b></p>
+            <%= link_to hotels_path do %>
+              <button>JOIN</button>
+            <% end %>
+          </div>
+          <div class="right-card_image">
+            <%= image_tag 'monaco.png' %>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
   <section class="home-page_section-four" id="past-events">
     <div class="home-page_section-four_header">

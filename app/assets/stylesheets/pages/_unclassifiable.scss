@@ -1,139 +1,42 @@
 .unclassifiable {
 
-    &_banner {
-      background-image:
+  &_banner {
+    height: 700px;
+    width: 100%;
+    background-image:
+      linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ),
+      url('https://s3.eu-west-3.amazonaws.com/rendezvoushotel/home-page.png');
+    background-size: cover;
+    color: white;
+    @include absCenterColumn;
 
-        linear-gradient(
-          rgba(0, 0, 0, 0.45),
-          rgba(0, 0, 0, 0.05)
-        ),
-
-       url('https://s3.eu-west-3.amazonaws.com/rendezvoushotel/home-page.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top;
-      width: 100%;
-      height: auto;
-      min-height: 700px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      & span {
-        background-image: url('https://s3.eu-west-3.amazonaws.com/rendezvoushotel/whitelogo.png');
-        height: 350px;
-        width: 350px;
-        background-size: cover;
-      }
+    & h1 {
+      font-size: 70px;
+      font-weight: 600;
     }
 
-    &_content {
-      padding: 50px 40px;
-
-      &_header {
-        width: 100%;
-        height: 70px;
-        border-bottom: 4px solid $primary-color;
-        background-color: white;
-        text-align: center;
-        padding: 5px 20px;
-
-        & h4 {
-          font-size: 36px;
-          font-family: 'Raleway', sans-serif;
-          color: $secondary-color;
-          font-weight: 600;
-        }
-      }
-
-      &_text {
-        font-size: 16px;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        color: $secondary-color;
-        padding: 70px 20px 60px 20px;
-        text-align: center;
-      }
-
+    & h6 {
+      font-size: 22px;
+      line-height: 35px;
+      width: 85%;
+      text-align: center;
     }
-}
 
-@media only screen and (max-width: 1200px) {
+    @include for-phone-only {
+      height: 600px;
 
-
-}
-
-@media only screen and (max-width: 992px) {
-
-
-}
-
-@media only screen and (max-width: 768px) {
-
-  .unclassifiable {
-
-      &_banner {
-
-        background-image:
-
-          linear-gradient(
-            rgba(0, 0, 0, 0.45),
-            rgba(0, 0, 0, 0.05)
-          ),
-
-         url('https://s3.eu-west-3.amazonaws.com/rendezvoushotel/home-page.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        min-height: 400px;
-        max-height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        & span {
-          background-image: url('https://s3.eu-west-3.amazonaws.com/rendezvoushotel/whitelogo.png');
-          height: 250px;
-          width: 250px;
-          background-size: cover;
-          background-position: top;
-        }
+      & h1 {
+        font-size: 26px;
       }
 
-      &_content {
-        padding: 50px 10px;
-
-        &_header {
-          width: 100%;
-          height: 70px;
-          border-bottom: 4px solid $primary-color;
-          background-color: white;
-          text-align: center;
-          padding: 5px 30px;
-
-          & h4 {
-            font-size: 28px;
-            font-family: 'Raleway', sans-serif;
-            color: $secondary-color;
-            padding: 10px;
-            font-weight: 600;
-          }
-        }
-
-        &_text {
-          font-size: 22px;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 300;
-          color: $secondary-color;
-          padding: 40px 20px 40px 20px;
-        }
-
+      & h6 {
+        font-size: 14px;
+        line-height: 20px;
       }
+    }
   }
 
-}
-
-@media only screen and (max-width: 600px) {
-
-
+  &_testimonials {
+    @include absCenterColumn;
+  }
 }
