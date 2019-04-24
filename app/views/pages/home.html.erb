@@ -1,12 +1,15 @@
 <div class="white-space"></div>
 <div class="home-page">
-  <section class="home-page_section-one">
+  <section class="home-video">
+    <%= cl_video_tag("last-one_vthzcq", loop: true, autoplay: true, controls: true) %>
+  </section>
+<!--   <section class="home-page_section-one">
     <h4>#UNCLASSIFIABLE</h4>
     <p>#YESIDARE #WOULDYOU?</p>
     <%= link_to unclassifiable_path, class: "home-page_section-one_button" do %>
       <span>Learn More</span>
     <% end %>
-  </section>
+  </section> -->
   <section class="home-page_section-two">
     <h1>
       RENDEZ VOUS IHF is an International Luxury Hotel Forum that creates unique partnerships between the best hotels in the world and the most important MICE buyers.
@@ -86,297 +89,287 @@
       <h4>Past Editions</h4>
     </div>
     <div class="home-page_section-four_card-box">
-
-      <!-- Vienna, Austria -->
       <div class="card">
-        <div class="card_image">
-          <%= image_tag 'austria.png' %>
+        <div class="card_video">
+          <%= cl_video_tag("RENDEZ_VOUS_-_Vienna_2018_1_gbcvgw", controls: true)%>
         </div>
-        <div class="card_text">
-          <h4>Vienna, Austria</h4>
-          <p>Park Hyatt, February 2018</p>
-          <a class="card_button" href="#popup">Learn More</a>
+        <div class="card_content">
+          <h4>Park Hyatt Vienna</h4>
+          <p>Austria, Vienna, February 2018</p>
+          <a href="#popup" class="card_button">Learn More</a>
         </div>
       </div>
-
-      <!-- Saint-Vincent, Italia -->
       <div class="card">
-        <div class="card_image">
-          <%= image_tag 'italy.png' %>
+        <div class="card_video">
+          <%= cl_video_tag("RENDEZ_VOUS_-_AOSTA_2016_s17pk1", controls: true)%>
         </div>
-        <div class="card_text">
-          <h4>Saint-Vincent, Italia</h4>
-          <p>Grand Hotel Billia, June 2016</p>
-          <a class="card_button" href="#popup2">Learn More</a>
+        <div class="card_content">
+          <h4>Grand Hotel Billia</h4>
+          <p>Saint-Vincent, Italia,June 2016</p>
+          <a href="#popup2" class="card_button">Learn More</a>
         </div>
       </div>
-
-
-      <!-- Paris, France -->
       <div class="card">
-        <div class="card_image">
-          <%= image_tag 'paris.png' %>
+        <div class="card_video">
+          <%= image_tag 'parisino' %>
         </div>
-        <div class="card_text">
-          <h4>Paris, France</h4>
-          <p>Hotel du Colllectionneur, November 2015</p>
-          <a class="card_button" href="#popup3">Learn More</a>
+        <div class="card_content">
+          <h4>Hotel du Colllectionneur</h4>
+          <p>Paris, France, November 2015</p>
+          <a href="#popup3" class="card_button">Learn More</a>
         </div>
       </div>
-
-      <!-- STOCKHOLM SWEDEN -->
       <div class="card">
-        <div class="card_image">
-          <%= image_tag 'stockholm.png' %>
+        <div class="card_video">
+          <%= cl_video_tag("RENDEZ_VOUS_Stockholm_qg72l5", controls: true) %>
         </div>
-        <div class="card_text">
-          <h4>Sotckholm, Sweden</h4>
-          <p>Grand Hôtel, May 2015</p>
-          <a class="card_button" href="#popup4">Learn More</a>
+        <div class="card_content">
+          <h4>Grand Hôtel</h4>
+          <p>Stockholm, Sweden, May 2015</p>
+          <a href="#popup4" class="card_button">Learn More</a>
         </div>
       </div>
-
-      <!-- HAMBURG GERMANY -->
       <div class="card">
-        <div class="card_image">
-          <%= image_tag 'hamburg.png' %>
+        <div class="card_video">
+          <%= cl_video_tag("RENDEZ_VOUS_Hamburg_2015_by_Design_Hotels_divkry", controls: true) %>
         </div>
-        <div class="card_text">
-          <h4>Hamburg, Germany</h4>
-          <p>Gastwerk, April 2015</p>
-          <a class="card_button" href="#popup5">Learn More</a>
+        <div class="card_content">
+          <h4>Gastwerk</h4>
+          <p>Hamburg, Germany,  April 2015</p>
+          <a href="#popup5" class="card_button">Learn More</a>
         </div>
       </div>
-
-      <!-- ALGARVE, PORTUGAL -->
       <div class="card">
-        <div class="card_image">
-          <%= image_tag 'algarve.png' %>
+        <div class="card_video">
+          <%= cl_video_tag("RENDEZ_VOUS_2014_-_Algarve_om2dpk", controls: true) %>
         </div>
-        <div class="card_text">
-          <h4>Algarve, Portugal</h4>
-          <p>Conrad Hotel, October 2014</p>
-          <a class="card_button" href="#popup6">Learn More</a>
+        <div class="card_content">
+          <h4>Conrad Hotel</h4>
+          <p>Algarve, Portugal, October 2014</p>
+          <a href="#popup6" class="card_button">Learn More</a>
         </div>
       </div>
-
-      <!-- AMSTERDAM, NETHERDLANDS -->
       <div class="card">
-        <div class="card_image">
-          <%= image_tag 'amsterdam.png' %>
+        <div class="card_video">
+          <%= cl_video_tag("RENDEZ_VOUS_Amsterdam_2014_j8vez4", controls: true) %>
         </div>
-        <div class="card_text">
-          <h4>Amsterdam, Netherlands</h4>
-          <p>Conservatorium Hotel, June 2014</p>
-          <a class="card_button" href="#popup7">Learn More</a>
+        <div class="card_content">
+          <h4>Conservatorium Hotel</h4>
+          <p>Amsterdam, Netherlands, June 2014</p>
+          <a href="#popup7" class="card_button">Learn More</a>
         </div>
       </div>
-
-      <!-- IBIZA, SPAIN -->
-      <div class="card">
-        <div class="card_image">
-          <%= image_tag 'ibiza.png' %>
-        </div>
-        <div class="card_text">
-          <h4>Ibiza, Spain </h4>
-          <p>Ibiza Grand Hotel, May 2013</p>
-          <a class="card_button" href="#popup8">Learn More</a>
-        </div>
-      </div>
-
-
     </div>
+    <div class="popup" id="popup">
+        <div class="popup_content">
+          <div class="popup_left">
+            <%= image_tag 'past-1.png', class: "popup_img" %>
+          </div>
+          <div class="popup_right">
+            <a href="#past-events" class="popup_close">&times;</a>
+            <div class="popup_header">
+              <div class="popup_header_left">
+                <h2>Park Hyatt Vienna</h2>
+                <h3>Austria</h3>
+              </div>
+              <div class="popup_header_right">
+                <%= image_tag 'pastav-1.png' %>
+              </div>
+            </div>
+            <h4>Vienna, February 2018</h4>
+            <p>
+              “In our opinion and why we love this format and forum is that
+              RENDEZ VOUS IHF creates an intimate atmosphere with targeted buyers, offering a great balance between 1-to-1 meetings, unique networking events and memorable parties. So for sure a forum that is worth it to join and be part of it!”
+            </p>
+            <p>
+              <b>Barbara Göttling</b>
+              <br>
+              Cluster Director of Sales & Marketing
+              <br>
+              Park Hyatt Vienna & Andaz Vienna Am Belvedere
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="popup" id="popup2">
+        <div class="popup_content">
+          <div class="popup_left">
+            <%= image_tag 'past-2.png', class: 'popup_img ' %>
+          </div>
+          <div class="popup_right">
+            <a href="#past-events" class="popup_close">&times;</a>
+            <div class="popup_header">
+              <div class="popup_header_left">
+                <h2>Grand Hotel Billia</h2>
+                <h3>Italia</h3>
+              </div>
+              <div class="popup_header_right">
+                <%= image_tag 'pastav-2.png' %>
+              </div>
+            </div>
+            <h4>Vienna, February 2018</h4>
+            <p>
+              “The good and real mix between work and relationships, always in amazing places…. Great activities!”
+            </p>
+            <p>
+              <b>Stefano Scotti</b>
+              <br>
+              Guest Relation Manager
+              <br>
+              Saint-Vincent Resort & Casino
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="popup" id="popup3">
+        <div class="popup_content">
+          <div class="popup_left">
+            <%= image_tag 'past-3.png', class: 'popup_img' %>
+          </div>
+          <div class="popup_right">
+            <a href="#past-events" class="popup_close">&times;</a>
+            <div class="popup_header">
+              <div class="popup_header_left">
+                <h2>Hôtel Collectionneur</h2>
+                <h3>France</h3>
+              </div>
+              <div class="popup_header_right">
+                <%= image_tag 'pastav-3.png' %>
+              </div>
+            </div>
+            <h4>Paris, November 2015</h4>
+            <p>
+              “I have been participating to many editions of RENDEZ VOUS IHF, an unclassifiable event mixing targeted business meeting to one of a kind networking events that strengthen business relationship beyond expectations. Can’t recommend it more”
+            </p>
+            <p>
+              <b>Bruno Chiaruttini</b>
+              <br>
+              General Manager
+              <br>
+              HILTON PARIS CHARLES DE GAULLE AIRPORT
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="popup" id="popup4">
+        <div class="popup_content">
+          <div class="popup_left">
+            <%= image_tag 'past-4.png', class: "popup_img" %>
+          </div>
+          <div class="popup_right">
+            <a href="#past-events" class="popup_close">&times;</a>
+            <div class="popup_header">
+              <div class="popup_header_left">
+                <h2>Grand Hotel Stockholm</h2>
+                <h3>Sweden</h3>
+              </div>
+              <div class="popup_header_right">
+
+              </div>
+            </div>
+            <h4>Stockholm, May 2015</h4>
+            <p>
+              “I participated 3 times at RENDEZ VOUS IHF which was every time a very successful event. We had interesting conversations with highly qualified buyers and received requests for our hotels. The meetings were very well organized and the rest of the program allowed us to connect with the buyers and other hoteliers in a fun and casual way!”
+            </p>
+            <p>
+              <b>Carolina Muller</b>
+              <br>
+              Director Luxury and Fashion, Switzerland
+              <br>
+              The Leading Hotels of the World
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="popup" id="popup5">
+        <div class="popup_content">
+          <div class="popup_left">
+            <%= image_tag 'past-5.png', class: "popup_img" %>
+          </div>
+          <div class="popup_right">
+            <a href="#past-events" class="popup_close">&times;</a>
+            <div class="popup_header">
+              <div class="popup_header_left">
+                <h2>Gastwerk Hotel </h2>
+                <h3>Germany</h3>
+              </div>
+              <div class="popup_header_right">
+                <%= image_tag 'pastav-4.png' %>
+              </div>
+            </div>
+            <h4>Hamburg, April 2015</h4>
+            <p>
+              “Working with RENDEZ VOUS IHF you are in for much more than only the right mix of business and fun – Alexandre’s passion and creativity for a colorful and entertaining spectacle that unites strangers to friends is always guaranteed!”
+            </p>
+            <p>
+              <b>Henning A. Schaub</b>
+              <br>
+              Director Travel Trade Relations,
+              <br>
+              Design Hotels AG
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="popup" id="popup6">
+        <div class="popup_content">
+          <div class="popup_left">
+            <%= image_tag 'past-6.png', class: "popup_img" %>
+          </div>
+          <div class="popup_right">
+            <a href="#past-events" class="popup_close">&times;</a>
+            <div class="popup_header">
+              <div class="popup_header_left">
+                <h2>Conrad Hotel </h2>
+                <h3>Portugal</h3>
+              </div>
+              <div class="popup_header_right">
+                <%= image_tag 'pastav-5.png' %>
+              </div>
+            </div>
+            <h4>Algarve, October 2014</h4>
+            <p>
+              “RENDEZ VOUS IHF is Unclassifiable!!! It is an unexpected journey ! Surprising ! Memorable ! Sophisticated! A new and innovative way to meet and engage with high profiled international clients from the luxury arena trough authentic and unique experiences.”
+            </p>
+            <p>
+              <b>Joel De Sousa</b>
+              <br>
+              Director Of Sales,
+              <br>
+              Conrad Algarve
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="popup" id="popup7">
+        <div class="popup_content">
+          <div class="popup_left">
+            <%= image_tag 'past-7.png', class: "popup_img" %>
+          </div>
+          <div class="popup_right">
+            <a href="#past-events" class="popup_close">&times;</a>
+            <div class="popup_header">
+              <div class="popup_header_left">
+                <h2>Conservatorium </h2>
+                <h3>Netherlandsl</h3>
+              </div>
+              <div class="popup_header_right">
+                <%= image_tag 'pastav-6.png' %>
+              </div>
+            </div>
+            <h4>Amsterdam, June 2014</h4>
+            <p>
+              “When I was working as the regional Director of the Set Hotels based in the Conservatorium Hotel in Amsterdam I had the opportunity to host the Rendezvous International Hotel Forum. This magnificent event brought a great level of Luxury professional not only to explore the city of Amsterdam but to get to know our Hotel. Our results were outstanding.  The coordination of the event was handled very well and the participating hotels and agents left very pleased with the outcome,  I highly recommend to take part of the RENDEZ VOUS IHF”
+            </p>
+            <p>
+              <b>Hannan Zanzuri</b>
+              <br>
+              Founder & CEO at Odentio
+              <br>
+              Conservatorium Hotel
+            </p>
+          </div>
+        </div>
+    </div>
+
   </section>
-
-  <!-- IN HERE ALL THE POP UPS -->
-  <div class="popup" id="popup">
-      <div class="popup_content">
-        <div class="popup_left">
-          <%= image_tag 'https://images.pexels.com/photos/244996/pexels-photo-244996.jpeg?cs=srgb&dl=auto-automobiles-cars-244996.jpg&fm=jpg', class: "popup_img" %>
-          <%= image_tag 'https://images.pexels.com/photos/189454/pexels-photo-189454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-        </div>
-        <div class="popup_right">
-          <a href="#past-events" class="popup_close">&times;</a>
-          <h2 class="popup_header">Vienna, Austria</h2>
-          <h3 class="popup_small-header">Park Hyatt, February 2018</h3>
-          <p class="popup_text">
-            <em>"In our opinion and why we love this format and forum is that Rendez-Vouz IHF creates an intimate atmosphere with targeted buyers, offering a great balance between 1-to-1 meetings, unique networking events and memorable parties. So for sure a forum that is worth it to join and be part of it!"</em>
-            <br><br>
-            <b> BARBARA GÖTTLING Cluster Director of Sales & Marketing Park Hyatt Vienna & Andaz Vienna Am Belvedere</b>
-          </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="popup" id="popup2">
-      <div class="popup_content">
-        <div class="popup_left">
-          <%= image_tag 'https://images.pexels.com/photos/7522/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-          <%= image_tag 'https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-        </div>
-        <div class="popup_right">
-          <a href="#past-events" class="popup_close">&times;</a>
-          <h2 class="popup_header">Sain-Vincent, Italia</h2>
-          <h3 class="popup_small-header">Grand Hotel Billia, June 2016</h3>
-          <p class="popup_text">
-            <em>
-              "The event is the perfect opportunity to showcase your properties in an intimate atmosphere. Due to the size of the forum, not too big, not too small, the experience is more to become a family. Suppliers and buyers are at the same level of harmony and with superb options for networking and to generate proper business relationships."
-            </em>
-            <br><br>
-            <b>
-              Borja Martinez Junquera
-              Director of Meetings & Events Europe
-              Palladium Hotel Group
-            </b>
-          </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="popup" id="popup3">
-      <div class="popup_content">
-        <div class="popup_left">
-          <%= image_tag 'https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-          <%= image_tag 'https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-        </div>
-        <div class="popup_right">
-          <a href="#past-events" class="popup_close">&times;</a>
-          <h2 class="popup_header">Paris, France</h2>
-          <h3 class="popup_small-header">Hotel du collectionneur, November 2015</h3>
-          <p class="popup_text">
-            <em>
-            "I have been participating to many editions of Rendez-Vous, an unclassifiable event mixing targeted business meeting to one of a kind networking events that strengthen business relationship beyond expectations. Can’t recommend it more"
-            </em>
-            <br><br>
-            <b>
-            Bruno CHIARUTTINI
-            General Manager
-            HILTON PARIS CHARLES DE GAULLE AIRPORT
-            </b>
-          </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="popup" id="popup4">
-      <div class="popup_content">
-        <div class="popup_left">
-          <%= image_tag 'https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-          <%= image_tag 'https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-        </div>
-        <div class="popup_right">
-          <a href="#past-events" class="popup_close">&times;</a>
-          <h2 class="popup_header">Stockholm, Sweden</h2>
-          <h3 class="popup_small-header">Grand Hôtel, May 2015</h3>
-          <p class="popup_text">
-            <em>
-            "Rendez Vous Forum's are awesome, funky, unconventional and strikingly different from any other Forums. Alex and Co go out of their way to always surprise us during the networking events and come up with great innovative ideas. Not only do they truly understand a buyer's needs but they also know how to have the right balance between scheduled appointments and activities. The concept of working in the morning and networking in the afternoon always in a cool unusual place and in a warm atmosphere, is perfect. All social events are always top class with a wow effect with lots of fun and help us all to connect with people on a higher level. Great Event!"
-            </em>
-            <br><br>
-            <b>
-              Ulrike Trader
-              Senior International Events Manager
-              Bird & Bird
-            </b>
-          </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="popup" id="popup5">
-      <div class="popup_content">
-        <div class="popup_left">
-          <%= image_tag 'https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-          <%= image_tag 'https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-        </div>
-        <div class="popup_right">
-          <a href="#past-events" class="popup_close">&times;</a>
-          <h2 class="popup_header">Hamburg, Germany</h2>
-          <h3 class="popup_small-header">Gastwerk, April 2015</h3>
-          <p class="popup_text">
-            <em>
-            "Not only amazing personalities at the Rendez-Vous International Hotel Forum, but also undeniably flexible, tremendously skilled and out-of-the-box thinking hospitality professionals. This can only categorized as: UNCLASSIFIABLE!"
-            </em>
-            <br><br>
-            <b>
-              Rick van den Berge
-              Executive Assistant
-              Euronics International BV
-            </b>
-          </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="popup" id="popup6">
-      <div class="popup_content">
-        <div class="popup_left">
-          <%= image_tag 'https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-          <%= image_tag 'https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-        </div>
-        <div class="popup_right">
-          <a href="#past-events" class="popup_close">&times;</a>
-          <h2 class="popup_header">Algarve, Portugal</h2>
-          <h3 class="popup_small-header">Conrad Hotel, October 2014</h3>
-          <p class="popup_text">
-            <em>
-            "Rendez Vous is Unclassifiable!!! It is an unexpected journey ! Surprising ! Memorable ! Sophisticated! A new and innovative way to meet and engage with high profiled international clients from the luxury arena trough authentic and unique experiences…"
-            </em>
-            <br><br>
-            <b>
-            </b>
-          </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="popup" id="popup7">
-      <div class="popup_content">
-        <div class="popup_left">
-          <%= image_tag 'https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-          <%= image_tag 'https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-        </div>
-        <div class="popup_right">
-          <a href="#past-events" class="popup_close">&times;</a>
-          <h2 class="popup_header">Amsterdam, Netherlands</h2>
-          <h3 class="popup_small-header">Conservatorium Hotel, June 2014</h3>
-          <p class="popup_text">
-            <em>
-            "I have been participating to many editions of Rendez-Vous, an unclassifiable event mixing targeted business meeting to one of a kind networking events that strengthen business relationship beyond expectations. Can’t recommend it more"
-            </em>
-            <br><br>
-            <b>
-            Bruno CHIARUTTINI
-            General Manager
-            HILTON PARIS CHARLES DE GAULLE AIRPORT
-            </b>
-          </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="popup" id="popup8">
-      <div class="popup_content">
-        <div class="popup_left">
-          <%= image_tag 'https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-          <%= image_tag 'https://images.pexels.com/photos/161901/paris-sunset-france-monument-161901.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "popup_img" %>
-        </div>
-        <div class="popup_right">
-          <a href="#past-events" class="popup_close">&times;</a>
-          <h2 class="popup_header">Ibiza, Spain</h2>
-          <h3 class="popup_small-header">Ibiza Gran Hotel, May 2013</h3>
-          <p class="popup_text">
-            <em>
-            "My meetings at Rendez Vous IHF have always been brilliant, focused on excellent and sometimes unusual suppliers. Everything ran extremely smoothly and I discovered some fantastic venues first-hand."
-            </em>
-            <br><br>
-            <b>
-              Maarten Brunt
-              Purchasing Manager Global Events
-              ATPI
-            </b>
-          </p>
-        </div>
-      </div>
-  </div>
-</div>

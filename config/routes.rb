@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get 'wouldyou', to: 'pages#wouldyou', as: :wouldyou
   get 'contact', to: 'pages#contact', as: :contact
   get '/hotels', to: 'pages#hotels'
+  get '/buyers', to: 'pages#buyers'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

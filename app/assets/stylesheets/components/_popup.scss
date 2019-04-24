@@ -34,7 +34,9 @@
   }
 
   &_content {
-    @include absCenter;
+    position: absolute;
+      top: 50%;
+      left: 50%;
     width: 75%;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(black, 0.2);
@@ -44,6 +46,10 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(.5);
     transition: all .4s .2s;
+
+    @include for-phone-only {
+      width: 85%;
+    }
   }
 
   &_left {
@@ -55,7 +61,11 @@
     width: 66.666667%;
     display: table-cell;
     vertical-align: middle;
-    padding: 3rem 5rem;
+    padding: 2rem 5rem;
+
+    @include for-phone-only {
+      padding: 1rem 2rem;
+    }
   }
 
   //OPEN STATES
@@ -75,30 +85,90 @@
     width: 100%;
   }
 
-  &_text {
-    font-size: 1.4rem;
-    margin-bottom: 4rem;
+  // &_text {
+  //   font-size: 1.4rem;
+  //   margin-bottom: 4rem;
 
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid #eee;
+  //   column-count: 2;
+  //   column-gap: 4rem;
+  //   column-rule: 1px solid #eee;
 
-    -moz-column-count: 2;
-    -moz-column-gap: 4rem;
-    -moz-column-rule: 1px solid #eee;
+  //   -moz-column-count: 2;
+  //   -moz-column-gap: 4rem;
+  //   -moz-column-rule: 1px solid #eee;
 
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-  }
+  //   -moz-hyphens: auto;
+  //   -webkit-hyphens: auto;
+  //   -ms-hyphens: auto;
+  //   hyphens: auto;
+  // }
 
   &_header {
-    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_left {
+
+      & h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 3.7rem;
+        color: $primary-color;
+        margin-bottom: 0rem;
+      }
+
+      & h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+      }
+
+      @include for-phone-only {
+        & h2 {
+          font-size: 1.8rem;
+        }
+
+        & h3 {
+          margin-top: 0.2rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &_right {
+      & img {
+        margin: 3rem;
+        height: 120px;
+      }
+
+      @include for-phone-only {
+        & img {
+          margin: 3rem;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  & h4 {
+    font-size: 1.8rem;
     font-weight: 600;
-    font-size: 6rem;
-    color: $primary-color;
     margin-bottom: 2rem;
+
+    @include for-phone-only {
+      font-size: 1.2rem;
+    }
+  }
+
+  & p {
+    font-size: 14px;
+
+    @include for-phone-only {
+      font-size: 12px;
+    }
   }
 
   &_small-header {
