@@ -1,7 +1,15 @@
 .contact-logo {
+  height: 150px;
   position: absolute;
     top: 40%;
     left: 20%;
+
+
+    @include for-phone-only {
+      height: 50px;
+        top: 160px;
+        left: 10%;
+    }
 }
 
 
