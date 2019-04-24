@@ -1,3 +1,51 @@
+.hotels-card {
+  margin: 30px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content:  center;
+
+  &_image {
+    margin: 10px 10px;
+
+    & img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    & h4 {
+      color: $primary-color;
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+
+    & h6 {
+      font-family: $main-font;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  @include for-phone-only {
+
+    &_content {
+
+      & h6 {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+
+
+
 .card {
   height: 350px;
   width: 60%;
