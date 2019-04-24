@@ -1,3 +1,11 @@
+.contact-logo {
+  position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+
+
 .avatar {
   margin: 45px;
   color: white;
@@ -29,16 +37,15 @@
 
   &_first {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 10vh 0 0 20vh;
+    padding: 40vh 0 0;
 
     & h3 {
       color: white;
-      padding: 0 0 0 80px;
       font-family: $main-font;
       font-weight: 600;
-      font-size: 60px;
+      font-size: 70px;
     }
 
     @include for-phone-only {
