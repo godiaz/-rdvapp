@@ -15,8 +15,11 @@
 
   &_content {
     width: 50%;
-    @include absCenterColumn;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
   }
 
   @include for-phone-only {
@@ -56,8 +59,11 @@
 
   &_content {
     width: 50%;
-    @include absCenterColumn;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
   }
 
   @include for-phone-only {

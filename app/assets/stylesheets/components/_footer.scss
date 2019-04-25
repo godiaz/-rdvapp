@@ -1,5 +1,5 @@
 .hoxton-footer {
-  height: 300px;
+  height: 260px;
   color: white;
   width: 100%;
   background-color: $secondary-color;
@@ -31,7 +31,9 @@
   }
   &_left-part {
     display:flex;
+    width: 100%;
     align-items:top;
+    justify-content: space-between;
     height: inherit
   }
 }
