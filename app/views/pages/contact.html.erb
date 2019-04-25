@@ -47,23 +47,19 @@
 
         <input type="email" name="email" placeholder="Email">
 
-        <div class="form-group hidden-xs hidden-sm">
-          <label for="buyer">I am :</label>
-          <select multiple name="buyer" id="rdvform" class="form-control">
+          <select name="buyer" id="rdvform" class="form-control">
+            <option value="" disabled selected> I am interested a:</option>
             <option value="Buyer">Buyer</option>
             <option value="Hotel">Hotel</option>
           </select>
-        </div>
 
-        <div class="form-group hidden-xs hidden-sm">
-          <label for="edition"> I am Interested in:</label>
-          <select multiple name="edition" id="rdvform" class="form-control">
+          <select name="edition" id="rdvform" class="form-control">
+            <option value="" disabled selected> I am interested in:</option>
             <option value="Lisboa Edition">Lisboa Edition</option>
             <option value="Megève Edition">Megève Edition</option>
             <option value="Cartagena Edition">Cartagena Edition</option>
             <option value="Monaco Edition">Monaco Edition</option>
           </select>
-        </div>
       </div>
       <input type="submit" value="Send" class="form_button">
     </form>
