@@ -1,5 +1,9 @@
+.point {
+  color: $secondary-color;
+}
+
 .hoxton-footer {
-  height: 240px;
+  height: 170px;
   color: white;
   width: 100%;
   background-color: $secondary-color;
@@ -12,6 +16,7 @@
     width: 100%;
     padding: 0 20px;
     text-align:center;
+    font-size: 13px;
   }
   &_pink-label {
     position: absolute;
@@ -20,9 +25,10 @@
     background-color: $primary-color;
   }
   &_logo {
-    height: 130px;
-    width: 130px;
-    margin-left: 75px;
+    height: 100px;
+    width: 100px;
+    margin-left: 25px;
+    margin-bottom: 25px;
   }
   &_right-part {
     height: 150px;
@@ -48,6 +54,11 @@
 
   & a {
     color: white;
+    font-size: 12px;
+  }
+
+  & p {
+    font-size: 12px;
   }
 }
 .footer-content {
