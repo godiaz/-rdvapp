@@ -1,6 +1,9 @@
 .white-space {
   width: 100%;
-  height: 30px;
+  height: 103px;
+  @media only screen and (max-width: 1200px) {
+    height: 70px;
+  }
 }
 
 .volume-logo {
