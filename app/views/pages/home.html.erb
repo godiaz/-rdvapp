@@ -1,7 +1,11 @@
 <div class="white-space"></div>
 <div class="home-page">
   <section class="home-video">
-    <%= cl_video_tag("last-one_vthzcq", loop: true, autoplay: true, muted: true, controls: true, poster: "https://s3.eu-west-3.amazonaws.com/rendezvoushotel/giant.png") %>
+    <%= cl_video_tag("last-one_vthzcq", id: "home_video", loop: true, autoplay: true, muted: true, poster: "https://s3.eu-west-3.amazonaws.com/rendezvoushotel/giant.png") %>
+    <div class="volume-toggle">
+      <%= image_tag "volume_on.png", class:"volume-logo hidden", id: "volume_on" %>
+      <%= image_tag "volume_off.png", class:"volume-logo", id: "volume_off" %>
+    </div>
   </section>
 <!--   <section class="home-page_section-one">
     <h4>#UNCLASSIFIABLE</h4>
@@ -414,4 +418,21 @@
         </div>
     </div>
 
-  </section>
+</section>
+<script>
+  const video = document.getElementById("home_video");
+  const volumeOn = document.getElementById("volume_on");
+  const volumeOff = document.getElementById("volume_off");
+
+  volumeOff.addEventListener('click', function() {
+    volumeOn.classList.toggle("hidden");
+    volumeOff.classList.toggle("hidden");
+    video.muted = false;
+  });
+
+  volumeOn.addEventListener('click', function() {
+    volumeOn.classList.toggle("hidden");
+    volumeOff.classList.toggle("hidden");
+    video.muted = true;
+  });
+</script>
