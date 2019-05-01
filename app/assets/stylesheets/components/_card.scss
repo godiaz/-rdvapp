@@ -167,7 +167,7 @@
 
       & h4 {
         margin-top: 20px;
-        font-size: 26px;
+        font-size: 22px;
 
         @include for-tablet-landscape-up {
           font-size: 26px;
@@ -176,6 +176,9 @@
     }
 
     &_button {
+      font-size: 14px;
+      padding: 6px 50px;
+      margin-top: 10px;
       margin-bottom: 20px;
     }
   }

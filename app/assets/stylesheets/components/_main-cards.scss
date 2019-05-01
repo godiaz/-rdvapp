@@ -71,7 +71,7 @@
 
   @include for-phone-only {
     flex-direction: column;
-    height: 700px;
+    height: 550px;
 
     &_image {
       height: 50%;
@@ -81,6 +81,21 @@
     &_content {
       height: 50%;
       width: 100%;
+
+      & h4 {
+        font-size: 16px !important;
+        font-weight: 600;
+      }
+
+      & h5 {
+        font-size: 14px !important;
+      }
+    }
+
+    & button {
+      margin-top: 10px;
+      padding: 5px 50px;
+      font-size: 14px;
     }
   }
 
@@ -156,7 +171,7 @@
 
   @include for-phone-only {
     flex-direction: column-reverse;
-    height: 700px;
+    height: 600px;
 
     &_image {
       height: 50%;
@@ -166,6 +181,21 @@
     &_content {
       height: 50%;
       width: 100%;
+
+      & h4 {
+        font-size: 16px !important;
+        font-weight: 600;
+      }
+
+      & h5 {
+        font-size: 14px !important;
+      }
+    }
+
+    & button {
+      margin-top: 10px;
+      padding: 5px 50px;
+      font-size: 14px;
     }
   }
 
