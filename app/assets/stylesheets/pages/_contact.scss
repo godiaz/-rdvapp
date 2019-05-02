@@ -4,7 +4,6 @@
     top: 45%;
     left: 20%;
 
-
     @include for-phone-only {
       height: 50px;
         top: 160px;
@@ -12,6 +11,11 @@
     }
 }
 
+@media (max-width: 980px) {
+  .contact-logo {
+     left: 10%;
+  }
+}
 
 
 .avatar {
@@ -117,176 +121,5 @@
   }
 }
 
-.contact-form {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  background-color: rgba(black, 0.8);
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .3s;
-  @include for-phone-only {
-    height: calc(100vh - 70px);
-  }
-
-  & h2 {
-    font-family: $main-font;
-    font-weight: 600;
-    margin-bottom: 50px;
-
-    @include for-phone-only {
-      font-size: 22px;
-      margin: 20px 0;
-    }
-  }
-
-  &_close {
-    &:link,
-    &:visited {
-      color: $secondary-color;
-      position: absolute;
-        top: 10px;
-        right: 10px;
-      font-size: 3rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: all .2s;
-      line-height: 1;
-    }
-
-    &:hover {
-      color: $primary-color;
-    }
-  }
-
-  &_content {
-    // @include absCenter;
-    position: absolute;
-      top: 50%;
-      left: 50%;
-    width: 75%;
-    background-color: white;
-    box-shadow: 0 2rem 4rem rgba(black, 0.2);
-    border-radius: 3px;
-    // display: table;
-    overflow: hidden;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(.5);
-    transition: all .4s .2s;
-  }
 
 
-  //OPEN STATES
-
-  &:target {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  &:target &_content {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
-
-  & form {
-    padding: 30px;
-    @include absCenterColumn;
-    @include for-phone-only {
-      padding: 10px;
-    }
-
-    & input {
-      outline: 0;
-      border: 0;
-      text-align: left;
-      border-bottom: 1px solid black;
-      margin: 10px 0;
-      padding-bottom: 6px;
-      width: 30%;
-
-      @include for-phone-only {
-        font-size: 14px;
-        width: 90%;
-      }
-    }
-
-    ::placeholder{
-      color: black;
-    }
-
-    & label {
-      font-family: $main-font;
-      font-weight: 500;
-    }
-
-    & select {
-      border: 0;
-      background-color: transparent;
-      border: 1px solid black;
-      border-radius: 0px !important;
-      padding: 0 10px;
-      width: 30%;
-
-      & option {
-        border: 0;
-        background-color: transparent;
-
-      }
-      @include for-phone-only {
-        width: 90%;
-        margin: 10px 0;
-      }
-    }
-
-    .form {
-
-      &_first {
-        width: 100%;
-        height: 100px;
-        @include absCenterSB;
-        @include for-phone-only {
-          @include absCenterColumn;
-          height: auto;
-        }
-      }
-
-      &_second {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 40px;
-        justify-content: space-between;
-        @include for-phone-only {
-          @include absCenterColumn;
-          margin-bottom: 10px;
-          height: auto;
-        }
-      }
-
-      &_button {
-        padding: 10px 50px !important;
-        color: white !important;
-        background-color: $primary-color !important;
-        border: 0 !important;
-        border-radius: 2px !important;
-        margin: 30px 0 !important;
-        text-align: center !important;
-        width: auto !important;
-
-        &:hover {
-          background-color: $primary-color-dark;
-        }
-
-        @include for-phone-only {
-          margin: 10px 0;
-          font-size: 16px;
-        }
-      }
-    }
-
-  }
-}
