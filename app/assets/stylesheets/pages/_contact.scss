@@ -11,6 +11,13 @@
     }
 }
 
+@media (max-width: 900px) {
+  .contact-logo {
+    top: 180px;
+    left: 45%;
+  }
+}
+
 @media (max-width: 980px) {
   .contact-logo {
      left: 10%;
