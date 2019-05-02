@@ -1,7 +1,7 @@
 <div class="white-space"></div>
 <div class="home-page">
   <section class="home-video">
-    <%= cl_video_tag("last-one_vthzcq", id: "home_video", loop: true, autoplay: true, muted: true, playsinline: true ) %>
+    <%= cl_video_tag("last-one_vthzcq", id: "home_video", loop: true, autoplay: true, muted: true, playsinline: true, poster: "https://s3.eu-west-3.amazonaws.com/rendezvoushotel/home-thumbnail.png") %>
     <div class="volume-toggle">
       <%= image_tag "volume_on.png", class:"volume-logo hidden", id: "volume_on" %>
       <%= image_tag "volume_off.png", class:"volume-logo", id: "volume_off" %>
@@ -33,7 +33,7 @@
             <p><b>October 15 to 18, 2019</b></p>
             <h5>Host Hotel</h5>
             <p><b>Pestana Palace</b></p>
-            <%= link_to hotels_path do %>
+            <%= link_to contact_path do %>
               <button>JOIN</button>
             <% end %>
           </div>
@@ -48,7 +48,7 @@
             <p><b>March 24 to 27, 2020</b></p>
             <h5>Host Hotel</h5>
             <p><b>Les Chalets du Monts d’Arbois Four Seasons </b></p>
-            <%= link_to hotels_path do %>
+            <%= link_to contact_path do %>
               <button>JOIN</button>
             <% end %>
           </div>
@@ -66,7 +66,7 @@
             <p><b>April 9 to 12, 2020</b></p>
             <h5>Host Hotel</h5>
             <p><b>Sofitel Santa Clara</b></p>
-            <%= link_to hotels_path do %>
+            <%= link_to contact_path do %>
               <button>JOIN</button>
             <% end %>
           </div>
@@ -78,7 +78,7 @@
             <p><b>October 26 to 29, 2020</b></p>
             <h5>Host Hotel</h5>
             <p><b>Hotel l’Hermitage</b></p>
-            <%= link_to hotels_path do %>
+            <%= link_to contact_path do %>
               <button>JOIN</button>
             <% end %>
           </div>
