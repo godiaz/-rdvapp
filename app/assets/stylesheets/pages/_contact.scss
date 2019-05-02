@@ -121,13 +121,16 @@
   height: 100vh;
   width: 100%;
   position: fixed;
-    top: 80px;
-    left: 0;
+  top: 70px;
+  left: 0;
   background-color: rgba(black, 0.8);
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
+  @include for-phone-only {
+    height: calc(100vh - 70px);
+  }
 
   & h2 {
     font-family: $main-font;
@@ -135,8 +138,8 @@
     margin-bottom: 50px;
 
     @include for-phone-only {
-      padding-top: 20px;
-      font-size: 26px;
+      font-size: 22px;
+      margin: 20px 0;
     }
   }
 
@@ -145,8 +148,8 @@
     &:visited {
       color: $secondary-color;
       position: absolute;
-        top: 2.5rem;
-        right: 2.5rem;
+        top: 10px;
+        right: 10px;
       font-size: 3rem;
       text-decoration: none;
       display: inline-block;
@@ -191,6 +194,9 @@
   & form {
     padding: 30px;
     @include absCenterColumn;
+    @include for-phone-only {
+      padding: 10px;
+    }
 
     & input {
       outline: 0;
@@ -199,10 +205,11 @@
       border-bottom: 1px solid black;
       margin: 10px 0;
       padding-bottom: 6px;
-      width: 200px;
+      width: 30%;
 
       @include for-phone-only {
         font-size: 14px;
+        width: 90%;
       }
     }
 
@@ -221,12 +228,16 @@
       border: 1px solid black;
       border-radius: 0px !important;
       padding: 0 10px;
-      width: 200px;
+      width: 30%;
 
       & option {
         border: 0;
         background-color: transparent;
 
+      }
+      @include for-phone-only {
+        width: 90%;
+        margin: 10px 0;
       }
     }
 
@@ -238,6 +249,7 @@
         @include absCenterSB;
         @include for-phone-only {
           @include absCenterColumn;
+          height: auto;
         }
       }
 
@@ -251,16 +263,19 @@
         @include for-phone-only {
           @include absCenterColumn;
           margin-bottom: 10px;
+          height: auto;
         }
       }
 
       &_button {
-        padding: 10px 80px;
-        color: white;
-        background-color: $primary-color;
+        padding: 10px 50px !important;
+        color: white !important;
+        background-color: $primary-color !important;
         border: 0 !important;
-        border-radius: 2px;
-        margin: 30px 0;
+        border-radius: 2px !important;
+        margin: 30px 0 !important;
+        text-align: center !important;
+        width: auto !important;
 
         &:hover {
           background-color: $primary-color-dark;
@@ -268,9 +283,7 @@
 
         @include for-phone-only {
           margin: 10px 0;
-          padding: 10px 50px;
           font-size: 16px;
-          text-align: center;
         }
       }
     }
