@@ -1,26 +1,19 @@
 .contact-logo {
   height: 150px;
-  position: absolute;
-    top: 45%;
-    left: 20%;
+
+    @include for-tablet-landscape-up {
+    }
 
     @include for-phone-only {
       height: 50px;
-        top: 160px;
-        left: 10%;
     }
 }
 
-@media (max-width: 900px) {
-  .contact-logo {
-    top: 180px;
-    left: 45%;
-  }
-}
 
 @media (max-width: 980px) {
   .contact-logo {
-     left: 10%;
+     top: 20%;
+     left: 42%;
   }
 }
 
@@ -56,9 +49,10 @@
 
   &_first {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40vh 0 0;
+    padding: 10vh 0 0;
 
     & h3 {
       color: white;
@@ -93,6 +87,9 @@
   &_second {
       &_first-row {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       &_second-row {
@@ -127,7 +124,6 @@
     }
   }
 }
-
 
 .contact-form {
   height: 100vh;
@@ -302,3 +298,6 @@
 
   }
 }
+
+
+
