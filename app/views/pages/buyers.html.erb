@@ -1,7 +1,153 @@
 <div class="white-space"></div>
 <div class="buyers">
   <%= cl_video_tag("RDV_LISBON_BUYERS_1_edlzv3", loop: true, autoplay: true, muted: true, controls: true) %>
-  <%= link_to contact_path do %>
-    <button>Register</button>
-  <% end %>
+
+  <h2>Our Recipe</h2>
+  <div class="hotels_recipe_content">
+    <div class="hotels_recipe_content_left">
+      <div class="hotels-card">
+        <div class="hotels-card_image">
+          <%= image_tag 'icon-1.png' %>
+        </div>
+        <div class="hotels-card_content">
+          <h4>Our RENDEZVOUS IHF</h4>
+          <h6>A friendly welcome reception & dinner on the arrival day attended by all VIP Buyers and Hoteliers</h6>
+        </div>
+      </div>
+      <div class="hotels-card">
+        <div class="hotels-card_image">
+          <%= image_tag 'icon-3.png' %>
+        </div>
+        <div class="hotels-card_content">
+          <h4>One to One meetings</h4>
+          <h6>A minimum of 40 pre-scheduled meetings organized between European VIP clients coming from corporate companies, MICE & Incentives agencies and European luxury 5 stars hotels with leaders in Corporate Event management and Location Finders - VIP Contacts</h6>
+        </div>
+      </div>
+    </div>
+    <div class="hotels_recipe_content_right">
+      <div class="hotels-card">
+        <div class="hotels-card_image">
+          <%= image_tag 'icon-2.png' %>
+        </div>
+        <div class="hotels-card_content">
+          <h4>2 surprise group lunches</h4>
+          <h6>Both lunches attended by VIP buyers and Hoteliers</h6>
+        </div>
+      </div>
+      <div class="hotels-card">
+        <div class="hotels-card_image">
+          <%= image_tag 'icon-4.png' %>
+        </div>
+        <div class="hotels-card_content">
+          <h4>2 networking dinners</h4>
+          <h6>One networking and Gala dinner attended by all VIP buyers and Hoteliers</h6>
+        </div>
+      </div>
+      <div class="hotels-card">
+        <div class="hotels-card_image">
+          <%= image_tag 'icon-5.png' %>
+        </div>
+        <div class="hotels-card_content">
+          <h4>1 afternoon team building activity</h4>
+          <h6>Attended by all VIP buyers and Hoteliers</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hotels_recipe">
+    <h2>What's in the Package?</h2>
+    <div class="hotels_recipe_content">
+      <div class="hotels_recipe_content_left">
+        <div class="hotels-card">
+          <div class="hotels-card_image">
+            <%= image_tag 'icon-6.png' %>
+          </div>
+          <div class="hotels-card_content">
+            <h6><b>3 Nights</b> of accomodation at the Forum’s Hotel</h6>
+          </div>
+        </div>
+        <div class="hotels-card">
+          <div class="hotels-card_image">
+            <%= image_tag 'icon-7.png' %>
+          </div>
+          <div class="hotels-card_content">
+            <h6><b>1 Full access</b> to all benefits of our RENDEZ VOUS IHF B2B Recipe</h6>
+          </div>
+        </div>
+        <div class="hotels-card">
+          <div class="hotels-card_image">
+            <%= image_tag 'icon-8.png' %>
+          </div>
+          <div class="hotels-card_content">
+            <h6><b>1 RENDEZ VOUS IHF 2020 Magazine Profile</b> of you and your represented Hotel / Hotel Group</h6>
+          </div>
+        </div>
+      </div>
+      <div class="hotels_recipe_content_right">
+        <div class="hotels-card">
+          <div class="hotels-card_image">
+            <%= image_tag 'icon-8.png' %>
+          </div>
+          <div class="hotels-card_content">
+            <h6><b>1 RENDEZ VOUS IHF 2020 Magazine Profiles</b> of all attending Luxury Hotels & VIP Buyers</h6>
+          </div>
+        </div>
+        <div class="hotels-card">
+          <div class="hotels-card_image">
+            <%= image_tag 'icon-9.png' %>
+          </div>
+          <div class="hotels-card_content">
+            <h6><b>1 Memorable Business Investment</b> turned into multiple Long Term Partnerships</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <a class="pink-button" onclick="openForm()">Register</a>
+
 </div>
+<div class="registration-popup">
+  <div class="registration-content">
+    <a href="javascript:void(0)" class="closebtn registration-content_close" onclick="closeForm()">&times;</a>
+    <h4>Registration Form</h4>
+    <p>Please make sure to fill out all details. We will call you at the earliest in order to discuss your attendance.</p>
+    <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/meganne@recallagency.com" method="post">
+        <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+        <input type="text" name="company" id="company" placeholder="Company Name" required="">
+        <input type="text" name="companysite" id="companysite" placeholder="Company URL(www)" required="">
+        <input type="text" name="country" id="country" placeholder="Country" required="">
+        <input type="email" name="_replyto" id="email-address" placeholder="Email Address" required="">
+        <input type="text" name="jobtitle" id="jobtitle" placeholder="Job Title" required="">
+        <input type="text" name="phone" id="phone" placeholder="(Area Code) + Phone Number" required="">
+        <fieldset id="fs-frm-selects">
+          <label for="timely">1. You are a:</label>
+          <select name="timely" id="timely" required="">
+            <option value="Choose" selected="" disabled="">Choose</option>
+            <option value="1">Buyer</option>
+            <option value="3">Exhibitor</option>
+          </select>
+          <label for="timely">2.If you are a buyer, here are some choices</label>
+          <select name="quality" id="quality" required="">
+            <option value="Choose" selected="" disabled="">Choose</option>
+            <option value="1">Mice</option>
+            <option value="3">Leisure</option>
+            <option value="5">Other</option>
+          </select>
+        </fieldset>
+        <label for="message">Additional Comments</label>
+        <textarea rows="3" name="message" id="message" placeholder="Text to Type" required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+      <input class="red-button" type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+<script>
+  const openForm = () => {
+    document.querySelector(".registration-popup").style.display = "block";
+  };
+
+  const closeForm = () => {
+    document.querySelector(".registration-popup").style.display = "none";
+  };
+</script>

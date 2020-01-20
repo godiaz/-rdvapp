@@ -214,3 +214,152 @@
   }
 
 }
+
+
+.registration-popup {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+    top: 50px;
+    left: 0;
+  display: none;
+}
+
+.registration-content {
+  height: 85vh;
+  width: 80vw;
+  max-width: 800px;
+  opacity: 1;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+  width: 75%;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(black, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  transition: all .4s .2s;
+  padding: 20px;
+
+  & h4 {
+    font-weight: bolder;
+  }
+
+  & p {
+    font-size: 14px;
+    color: #474747;
+
+    @include for-phone-only {
+      font-size: 12px;
+    }
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    overflow-x: scroll;
+
+    & input {
+      font-weight: 300;
+      color: #8A91A1;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      background-color: white;
+      padding: 5px;
+      border: #ECEDEE 1px solid;
+      transition: 0.5s;
+
+      &:focus {
+        border: 2px solid $primary-color;
+        outline: none;
+        transition: 0.4s;
+      }
+    }
+
+    & label {
+      font-weight: 400;
+    }
+
+    & textarea {
+      border: #ECEDEE 1px solid;
+      transition: 0.5s;
+      padding: 5px;
+      font-weight: 300;
+
+      &:focus {
+        border: 2px solid $primary-color;
+        outline: none;
+        transition: 0.4s;
+      }
+    }
+
+    @include for-phone-only {
+      font-size: 12px;
+
+      & input {
+        margin-bottom: 8px;
+        padding: 4px;
+
+        &:focus {
+          border: 2px solid $primary-color;
+          outline: none;
+          transition: 0.4s;
+        }
+      }
+
+      & label {
+        font-weight: 400;
+      }
+
+      & textarea {
+        border: #ECEDEE 1px solid;
+        transition: 0.5s;
+        padding: 5px;
+        font-weight: 300;
+
+        &:focus {
+          border: 2px solid $primary-color;
+          outline: none;
+          transition: 0.4s;
+        }
+      }
+
+      & select {
+        border: 1px solid #474747;
+      }
+    }
+  }
+
+  & fieldset {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  &_close {
+    &:link,
+    &:visited {
+      color: $secondary-color;
+      position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all .2s;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  @include for-phone-only {
+    width: 85%;
+  }
+}
